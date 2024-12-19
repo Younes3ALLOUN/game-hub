@@ -27,7 +27,7 @@ const [data, setData] = useState<T[]>([]);
           setLoading(false)});
 
           return ()=> controller.abort();
-      },deps ?[...deps]: []);
+      },deps? [...deps]: []);
 
       return {data, error, isLoading}
 }
